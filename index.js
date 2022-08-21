@@ -3,6 +3,9 @@ require('dotenv').config()
 const express = require('express')
 const app = express()
 
+//middleware
+app.use(express.urlencoded({ extended: true }))
+
 // Express Settings
 app.set('views', __dirname + '/views')
 app.set('view engine', 'jsx')
@@ -20,7 +23,6 @@ app.get('*', (req, res) => {
     res.render('error404')
 })
 
-app.use(express.urlencoded({ extended: true }))
 
 
 // Listen for Connections
