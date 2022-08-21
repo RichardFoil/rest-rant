@@ -6,14 +6,24 @@ function show (data) {
         <Def>
           <main>
             <h1>{ data.place.name }</h1>
-            <h2>{ data.place.pic }</h2>
-            <h3> Rating </h3>
+                <h3> Rating </h3>
                 <p>
                     currently unrated
                 </p>
             <h3>Description</h3>
             Located in { data.place.city },{ data.place.state } and serving { data.place.cuisines }
             <h3> Comments</h3>
+
+            <a href={`/places/${data.id}/edit`} className="btn btn-warning"> 
+                Edit
+            </a>  
+            <form method="POST" action="{`/places/${data.id}?_method=DELETE`}"> 
+                <button type="submit" className="btn btn-danger">
+                    Delete
+                </button>
+            </form>     
+ 
+
           </main>
         </Def>
     )
