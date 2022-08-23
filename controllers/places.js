@@ -42,7 +42,7 @@ router.get('/:id', (req, res) => {
 })
 
 //edit
-router.get('/:id', (req, res) => {
+router.get('/:id/edit', (req, res) => {
   let id =Number(req.params.id)
   if (isNaN(id)) {
     res.render('error404')
