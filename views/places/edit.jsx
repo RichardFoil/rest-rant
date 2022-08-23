@@ -1,7 +1,7 @@
 const React = require('react')
 const Def = require('../default.jsx')
 
-function edit_form (data) {
+function edit (data) {
     return (
         <Def>
           <main>
@@ -42,4 +42,4 @@ function edit_form (data) {
     )
 }
 
-module.exports = edit_form
+module.exports = edit
