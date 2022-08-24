@@ -64,6 +64,17 @@ router.put('/:id', (req, res) =>{
     res.render('error404')
   }
   else {
+    if(!req.body.pic) {
+      req.body.pic = "http://placekitten.com/400/400"
+    }
+    if(!req.body.city){
+      req.body.city = 'Nowhere'
+    }
+    if(!req.body.state){
+      req.body.state = 'Nowhere '
+    }
+    
+    places[id]= req.body
     res.redirect(`/places/${id}`)
   }
 })

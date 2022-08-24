@@ -7,6 +7,7 @@ function show (data) {
         <Def>
           <main>
             <h1>{ data.place.name }</h1>
+            <img src={data.place.pic} alt={data.place.name}></img>
                 <h3> Rating </h3>
                 <p>
                     currently unrated
