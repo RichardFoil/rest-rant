@@ -24,5 +24,6 @@
     "url": "https://github.com/RichardFoil/rest-rant/issues"
   },
   "homepage": "https://github.com/RichardFoil/rest-rant#readme",
-  "description": ""
+  "description": "REST-Rant is an app where users can review restaurants.",
+  "devDependencies": {}
 }
